@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+      
+<!-- 🌙 Dark Mode Toggle Button -->
+      <button id="toggle-theme">Toggle Dark Mode</button>
+      
+<!-- Task Input Section -->    
+      <div class="input-section">
+  <input type="text" id="task-input" placeholder="Add a new task..." />
+  <input type="date" id="due-date" />
+     <select id="task-category">
+  <option value="General">General</option>
+  <option value="Work">Work</option>
+  <option value="Personal">Personal</option>
+  <option value="Urgent">Urgent</option>
+</select>     
+  <button id="add-task">Add</button>
+</div>
+
+<!-- Filter Buttons -->      
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+      
+ <!-- Task List -->     
+    <ul id="task-list"></ul>
+      
+<!-- Clear Completed Button -->      
+    <button id="clear-completed">Clear Completed</button>
+  </div>
+    
+<!-- JavaScript files -->    
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
